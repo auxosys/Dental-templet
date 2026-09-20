@@ -91,7 +91,7 @@ function Index() {
 
       <main>
         {/* HERO — section A: ivory */}
-        <section className="relative overflow-hidden bg-ivory px-6 pt-28 pb-16 sm:px-10 lg:pt-36 lg:pb-28">
+        <section className="relative overflow-hidden bg-ivory px-6 pt-24 pb-14 sm:px-10 lg:pt-36 lg:pb-28">
           
           {/* Decorative bubbles */}
           <div className="pointer-events-none absolute -top-24 -left-24 h-[500px] w-[500px] rounded-full bg-charcoal opacity-[0.03]" />
@@ -105,34 +105,40 @@ function Index() {
           <div className="pointer-events-none absolute top-[55%] right-[45%] h-[90px] w-[90px] rounded-full bg-clinical opacity-[0.06]" />
           <div className="pointer-events-none absolute top-[15%] left-[45%] h-[80px] w-[80px] rounded-full bg-charcoal opacity-[0.04]" />
 
-          <div className="relative mx-auto grid max-w-[92rem] gap-10 lg:gap-16 lg:grid-cols-[1.05fr_0.95fr] lg:items-start">
-            <div className="mx-auto max-w-3xl text-center lg:text-left lg:mx-0">
+          <div className="relative mx-auto grid max-w-[92rem] lg:gap-16 lg:grid-cols-[1.05fr_0.95fr] lg:items-start">
+            <div className="mx-auto max-w-xl text-center lg:text-left lg:mx-0 lg:max-w-3xl">
               <Reveal>
-                <p className="eyebrow text-clinical">
+                <p className="eyebrow text-clinical text-[0.65rem] sm:text-xs tracking-[0.12em]">
                   Dental Auxosys — Advanced implant dentistry
                 </p>
-                <h1 className="display mt-6 text-5xl leading-tight text-charcoal sm:text-6xl lg:text-[5.25rem] lg:leading-[1.05]">  
+                <h1 className="display mt-4 text-[2.6rem] leading-[1.1] text-charcoal sm:text-5xl lg:text-[5.25rem] lg:leading-[1.05]">
                   Precision for
                   <br />
                   your smile.
                 </h1>
               </Reveal>
+
+              {/* Mobile-only illustration — shown between h1 and subtext */}
+              <Reveal delay={80}>
+                <DentalImplantIllustration className="lg:hidden mx-auto mt-6 w-52 h-auto" />
+              </Reveal>
+
               <Reveal delay={120}>
-                <p className="mt-8 max-w-md text-xl leading-snug text-charcoal-soft mx-auto lg:mx-0">
+                <p className="mt-5 max-w-xs text-base leading-snug text-charcoal-soft mx-auto lg:mx-0 lg:max-w-md lg:text-xl">
                   Advanced dental care,
                   <br />
                   designed around you.
                 </p>
-                <div className="mt-10 flex flex-wrap gap-3 justify-center lg:justify-start">
+                <div className="mt-8 flex flex-col gap-3 justify-center sm:flex-row lg:justify-start">
                   <a
                     href="#contact"
-                    className="eyebrow bg-charcoal px-6 py-4 text-white transition-colors duration-300 hover:bg-clinical-dark"
+                    className="eyebrow bg-charcoal px-6 py-4 text-white transition-colors duration-300 hover:bg-clinical-dark text-center"
                   >
                     Book a consultation
                   </a>
                   <a
                     href="#implants"
-                    className="eyebrow border border-charcoal px-6 py-4 text-charcoal transition-colors duration-300 hover:bg-clinical-pale"
+                    className="eyebrow border border-charcoal px-6 py-4 text-charcoal transition-colors duration-300 hover:bg-clinical-pale text-center"
                   >
                     Explore dental implants
                   </a>
@@ -140,9 +146,10 @@ function Index() {
               </Reveal>
             </div>
 
-            <Reveal delay={120} className="flex flex-col justify-start lg:mt-0">
-              <DentalImplantIllustration className="absolute right-[-1rem] top-32 z-0 w-[220px] h-auto sm:w-[280px] lg:static lg:w-full lg:max-w-md lg:mx-auto xl:ml-auto lg:mb-4 pointer-events-none lg:pointer-events-auto" />
-              <div className="hidden lg:block h-px w-full bg-border mt-0" />
+            {/* Desktop-only right column */}
+            <Reveal delay={120} className="hidden lg:flex flex-col justify-start">
+              <DentalImplantIllustration className="w-full max-w-md mx-auto xl:ml-auto mb-4" />
+              <div className="h-px w-full bg-border" />
               <p className="mt-3 max-w-sm text-sm leading-relaxed text-charcoal-muted lg:text-base">
                 At Dental Auxosys, advanced technology and thoughtful clinical care come
                 together for a calm, modern dental experience.
@@ -152,37 +159,32 @@ function Index() {
         </section>
 
         {/* CLINIC INTRODUCTION — section B: white */}
-        <section id="about" className="bg-pure px-6 py-16 sm:px-10 lg:py-24 relative">
-          <div className="relative mx-auto grid max-w-[92rem] gap-14 lg:grid-cols-[0.8fr_1.2fr]">
-            {/* Mobile background image */}
-            <img 
-              src="/wavy-veneers.jpg" 
-              alt="" 
-              className="absolute top-[65%] left-1/2 -translate-x-1/2 -translate-y-1/2 z-0 w-full max-w-[280px] opacity-20 pointer-events-none object-contain lg:hidden"
-            />
+        <section id="about" className="bg-pure px-6 py-14 sm:px-10 lg:py-24">
+          <div className="mx-auto max-w-[92rem] grid gap-10 lg:gap-14 lg:grid-cols-[0.8fr_1.2fr]">
+            {/* Left: label + image (desktop only) */}
             <Reveal>
-              <p className="eyebrow text-clinical relative z-10 lg:-mt-4">Dental Auxosys</p>
-              {/* Desktop inline image */}
+              <p className="eyebrow text-clinical lg:-mt-4">Dental Auxosys</p>
               <img 
                 src="/wavy-veneers.jpg" 
                 alt="Dental Veneers Illustration" 
-                className="hidden lg:block lg:-mt-16 w-full lg:max-w-md object-contain relative z-0"
+                className="hidden lg:block lg:-mt-16 w-full lg:max-w-md object-contain"
               />
             </Reveal>
+            {/* Right: heading + copy + CTA */}
             <Reveal delay={100}>
-              <h2 className="display text-[clamp(2rem,4.4vw,3.5rem)] text-charcoal">
+              <h2 className="display text-3xl leading-tight text-charcoal sm:text-4xl lg:text-[clamp(2rem,4.4vw,3.5rem)]">
                 Modern dentistry.
                 <br />
                 Thoughtful care.
               </h2>
-              <p className="mt-6 text-base leading-relaxed text-charcoal-muted lg:mt-8 lg:text-lg">
+              <p className="mt-5 text-base leading-relaxed text-charcoal-muted lg:mt-8 lg:text-lg">
                 Dental Auxosys brings together advanced dental technology, precision
                 engineering, and a thoughtfully designed environment. Our focus is on
                 delivering calm, transparent, and highly effective clinical care.
               </p>
               <a
                 href="#contact"
-                className="eyebrow mt-8 inline-block border border-charcoal/20 px-5 py-3 text-charcoal transition-colors duration-300 hover:bg-clinical hover:text-white hover:border-clinical"
+                className="eyebrow mt-7 inline-block border border-charcoal/20 px-5 py-3 text-charcoal transition-colors duration-300 hover:bg-clinical hover:text-white hover:border-clinical"
               >
                 Meet Dental Auxosys
               </a>
