@@ -7,7 +7,7 @@ const STORY = [
   {
     from: 0,
     to: 0.15,
-    label: "Dental Kraft — The Foundation",
+    label: "Dental Auxosys — The Foundation",
     lines: ["Precision begins beneath", "the surface."],
   },
   {
@@ -264,7 +264,7 @@ export function ImplantSequence() {
     return (
       <section id="technology" className="bg-charcoal px-6 py-24 sm:px-10">
         <div className="mx-auto max-w-5xl">
-          <p className="eyebrow text-clinical-pale">Dental Kraft — Advanced implant dentistry</p>
+          <p className="eyebrow text-clinical-pale">Dental Auxosys — Advanced implant dentistry</p>
           <h2 className="display mt-6 text-4xl text-white sm:text-5xl">
             Precision from
             <br />
@@ -341,7 +341,7 @@ export function ImplantSequence() {
             <p
               className={`eyebrow ${dark ? "text-white/45" : "text-charcoal-muted"}`}
             >
-              Dental Kraft
+              Dental Auxosys
             </p>
             <div className="w-32 sm:w-48">
               <div

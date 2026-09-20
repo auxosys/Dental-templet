@@ -77,16 +77,16 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
     meta: [
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { title: "Dental Kraft — Advanced Implant Dentistry" },
+      { title: "Dental Auxosys — Advanced Implant Dentistry" },
       {
         name: "description",
         content:
-          "Dental Kraft — advanced dental technology and thoughtful clinical care for a calm, modern dental experience.",
+          "Dental Auxosys — advanced dental technology and thoughtful clinical care for a calm, modern dental experience.",
       },
-      { property: "og:title", content: "Dental Kraft" },
+      { property: "og:title", content: "Dental Auxosys" },
       {
         property: "og:description",
-        content: "Dental Kraft — advanced dental technology and thoughtful clinical care for a calm, modern dental experience.",
+        content: "Dental Auxosys — advanced dental technology and thoughtful clinical care for a calm, modern dental experience.",
       },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
@@ -102,7 +102,7 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
         rel: "stylesheet",
         href: "https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&display=swap",
       },
-      { rel: "icon", href: "/dk_mark_white_green.svg", type: "image/svg+xml" },
+
     ],
   }),
   shellComponent: RootShell,

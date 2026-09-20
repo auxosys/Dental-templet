@@ -9,17 +9,17 @@ import { DentalImplantIllustration } from "@/components/DentalImplantIllustratio
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
-      { title: "Dental Kraft — Advanced Implant Dentistry" },
+      { title: "Dental Auxosys — Advanced Implant Dentistry" },
       {
         name: "description",
         content:
-          "Dental Kraft brings advanced dental technology and thoughtful clinical care together for a calm, modern dental experience.",
+          "Dental Auxosys brings advanced dental technology and thoughtful clinical care together for a calm, modern dental experience.",
       },
-      { property: "og:title", content: "Dental Kraft — Advanced Implant Dentistry" },
+      { property: "og:title", content: "Dental Auxosys — Advanced Implant Dentistry" },
       {
         property: "og:description",
         content:
-          "Precision for your smile. Advanced dental care, designed around you, at Dental Kraft.",
+          "Precision for your smile. Advanced dental care, designed around you, at Dental Auxosys.",
       },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
@@ -91,7 +91,7 @@ function Index() {
 
       <main>
         {/* HERO — section A: ivory */}
-        <section className="relative overflow-hidden bg-ivory px-6 pt-16 pb-16 sm:px-10 lg:pt-24 lg:pb-24">
+        <section className="relative overflow-hidden bg-ivory px-6 pt-28 pb-16 sm:px-10 lg:pt-36 lg:pb-28">
           
           {/* Decorative bubbles */}
           <div className="pointer-events-none absolute -top-24 -left-24 h-[500px] w-[500px] rounded-full bg-charcoal opacity-[0.03]" />
@@ -109,9 +109,9 @@ function Index() {
             <div className="mx-auto max-w-3xl text-center lg:text-left lg:mx-0">
               <Reveal>
                 <p className="eyebrow text-clinical">
-                  Dental Kraft — Advanced implant dentistry
+                  Dental Auxosys — Advanced implant dentistry
                 </p>
-                <h1 className="display mt-6 text-4xl text-charcoal sm:text-5xl lg:text-7xl">
+                <h1 className="display mt-6 text-5xl leading-tight text-charcoal sm:text-6xl lg:text-[5.25rem] lg:leading-[1.05]">  
                   Precision for
                   <br />
                   your smile.
@@ -142,9 +142,9 @@ function Index() {
 
             <Reveal delay={120} className="flex flex-col justify-start lg:mt-0">
               <DentalImplantIllustration className="absolute right-[-1rem] top-32 z-0 w-[220px] h-auto sm:w-[280px] lg:static lg:w-full lg:max-w-md lg:mx-auto xl:ml-auto lg:mb-4 pointer-events-none lg:pointer-events-auto" />
-              <div className="h-px w-full bg-border mt-32 lg:mt-0" />
-              <p className="mt-4 max-w-sm text-xl leading-relaxed text-charcoal-muted sm:text-2xl">
-                At Dental Kraft, advanced technology and thoughtful clinical care come
+              <div className="hidden lg:block h-px w-full bg-border mt-0" />
+              <p className="mt-3 max-w-sm text-sm leading-relaxed text-charcoal-muted lg:text-base">
+                At Dental Auxosys, advanced technology and thoughtful clinical care come
                 together for a calm, modern dental experience.
               </p>
             </Reveal>
@@ -161,7 +161,7 @@ function Index() {
               className="absolute top-[65%] left-1/2 -translate-x-1/2 -translate-y-1/2 z-0 w-full max-w-[280px] opacity-20 pointer-events-none object-contain lg:hidden"
             />
             <Reveal>
-              <p className="eyebrow text-clinical relative z-10 lg:-mt-4">Dental Kraft</p>
+              <p className="eyebrow text-clinical relative z-10 lg:-mt-4">Dental Auxosys</p>
               {/* Desktop inline image */}
               <img 
                 src="/wavy-veneers.jpg" 
@@ -176,7 +176,7 @@ function Index() {
                 Thoughtful care.
               </h2>
               <p className="mt-6 text-base leading-relaxed text-charcoal-muted lg:mt-8 lg:text-lg">
-                Dental Kraft brings together advanced dental technology, precision
+                Dental Auxosys brings together advanced dental technology, precision
                 engineering, and a thoughtfully designed environment. Our focus is on
                 delivering calm, transparent, and highly effective clinical care.
               </p>
@@ -184,7 +184,7 @@ function Index() {
                 href="#contact"
                 className="eyebrow mt-8 inline-block border border-charcoal/20 px-5 py-3 text-charcoal transition-colors duration-300 hover:bg-clinical hover:text-white hover:border-clinical"
               >
-                Meet Dental Kraft
+                Meet Dental Auxosys
               </a>
             </Reveal>
           </div>
@@ -353,7 +353,7 @@ function Index() {
         >
           <div className="mx-auto max-w-[92rem]">
             <Reveal>
-              <p className="eyebrow text-clinical relative z-10 lg:-mt-4">Dental Kraft</p>
+              <p className="eyebrow text-clinical relative z-10 lg:-mt-4">Dental Auxosys</p>
               <h2 className="display mt-4 text-3xl text-charcoal sm:text-4xl lg:text-5xl">
                 Advanced dental care,
                 <br />

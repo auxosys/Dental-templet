@@ -20,10 +20,10 @@ export function Wordmark({ tone = "dark" }: { tone?: "dark" | "light" }) {
         window.scrollTo({ top: 0, behavior: "smooth" });
       }}
       className="group block leading-none"
-      aria-label="Dental Kraft — home"
+      aria-label="Dental Auxosys — home"
     >
       <span className={`block text-lg font-semibold tracking-[0.16em] ${primary}`}>DENTAL</span>
-      <span className={`eyebrow mt-1 block ${secondary}`}>KRAFT</span>
+      <span className={`eyebrow mt-1 block ${secondary}`}>AUXOSYS</span>
     </a>
   );
 }

@@ -22,7 +22,6 @@ export function SiteFooter() {
       <div className="mx-auto max-w-[92rem]">
         <div className="grid grid-cols-2 gap-x-8 gap-y-14 lg:grid-cols-[1.1fr_1fr_1fr] lg:gap-14">
           <div className="col-span-2 lg:col-span-1">
-            <img src="/dk_mark_white_green.svg" alt="Dental Kraft Mark" className="mb-6 h-12 w-auto" />
             <Wordmark tone="light" />
             <p className="mt-6 max-w-xs text-sm leading-relaxed text-white/55">
               Modern Dental Care
@@ -75,7 +74,7 @@ export function SiteFooter() {
         </div>
 
         <div className="mt-16 flex flex-col gap-3 border-t border-white/10 pt-8 sm:flex-row sm:items-center sm:justify-between">
-          <p className="eyebrow text-white/35">Dental Kraft</p>
+          <p className="eyebrow text-white/35">Dental Auxosys</p>
           <p className="eyebrow text-white/35">Advanced implant dentistry</p>
         </div>
       </div>
